@@ -4,6 +4,7 @@ class MainController
 {
 	private $config_value = 0;
 	private $config_value2 = 5;
+	private $config_value3 = 2.5;
 
 	public function MainController()
 	{
@@ -29,8 +30,19 @@ class MainController
 	{
 		return $this->value2;
 	}
+
+	public function set_config_value3($value)
+	{
+		$this->config_value2 = value;
+	}
+
+	public function get_config_value3()
+	{
+		return $this->value2;
+	}
 }
 
 $main_controller = new MainController();
 $main_controller->run();
 print $main_controller->get_config_value2();
+print $main_controller->get_config_value3();
